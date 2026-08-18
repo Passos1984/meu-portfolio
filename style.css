@@ -44,3 +44,45 @@ footer a{
 footer a:hover {
     filter: brightness(0.8); /* Escurece o botão */
 }
+
+/* Botões  da  vitrine  de Projetos */
+section a {
+    display: inline-block; /* Permite definir largura e altura */
+    margin-top: 15px; /* Espaço acima do botão */
+    margin-right: 10px; /* Espaço à direita do botão */
+    padding: 10px 20px; /* Define o tamanho do botão */
+    border-radius: 6px; /* Arredonda os cantos do botão */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: 0.3s; /* Prepara a animação do mouse */
+}
+
+/* Botão Segundário (ver Código) - Fundo transparente com borda */
+section a:last-of-type {
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid var(--blue-tech); /* Borda azul */
+    color: var(--blue-tech); /* Texto azul */
+}
+
+/* Efeito  ao passar  o mouse por cima do botão */
+section a:hover {
+    filter: brightness(0.8); /* Escurece o botão */
+}
+
+/* Tipografia E Espaçamentos (textos)*/
+h1{
+    font-size: 2.5rem; /* Tamanho do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: var(--blue-tech); /* Cor do título */
+}
+
+h2{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+p{
+    line-height: 1.6; /* Espaçamento entre linhas */
+    font-size: 1.1rem; /* Tamanho do texto */
+    color: #c4c4cc;
+}
