@@ -86,3 +86,29 @@ p{
     font-size: 1.1rem; /* Tamanho do texto */
     color: #c4c4cc;
 }
+
+/* Imagens  Do Portfólio */
+/* Estilo para a foto de perfil no header */
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Deixa a foto perfeitamente redonda */
+    border: 3px solid var(--blue-tech);
+    margin-bottom: 20px;
+    object-fit: cover; /* Evita que a foto fique esticada */
+}
+
+/* Galeria de imagens do projeto (Prints de celular lado a lado) */
+.galeria-projeto {
+    display: flex;
+    gap: 15px; /* Espaço entre as fotos */
+    margin-bottom: 15px;
+}
+
+.galeria-projeto img {
+    flex: 1; /* Faz as imagens dividirem o espaço igualmente */
+    max-width: 32%; /* Garante que as 3 caibam lado a lado */
+    border-radius: 8px; /* Cantos arredondados */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra elegante */
+}
