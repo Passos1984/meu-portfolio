@@ -1,90 +1,144 @@
+/* ==============================
+   RESET
+   ============================== */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+/* ==============================
+   VARIÁVEIS
+   ============================== */
+
 :root {
-    --bg-color: #121214; 
-    --card-color: #18181b;
-    --card-houver: #202024;
+  --bg-color: #121214;
 
-    --text-color: #e1e1e6;
-    --text-secondary: #a1a1a1;
+  --card-color: #18181b;
+  --card-hover: #202024;
 
-    --blue-tech: #3b82f6;
-    --blue-houver: #2563eb;
+  --text-color: #e1e1e6;
+  --text-secondary: #a1a1a1;
 
-    --border-color: #27272a;
+  --blue-tech: #3b82f6;
+  --blue-hover: #2563eb;
 
-    --shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  --border-color: #27272a;
 
+  --shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Aplicando as cores no corpo do site */
+
+/* ==============================
+   BODY
+   ============================== */
+
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: Arial, Helvetica, sans-serif;
-   line-height: 1.6;
-    font-size: 16;
-    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
+  background-color: var(--bg-color);
+
+  color: var(--text-color);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 1.6;
+
+  font-size: 16px;
+
+  min-height: 100vh;
 }
+
+
+/* ==============================
+   CABEÇALHO
+   ============================== */
 
 header {
-    max-width: 900px;
+  max-width: 900px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    padding: 60px 20px 50px;
+  padding: 70px 20px 60px;
 
-    text-align: center;
+  text-align: center;
 }
 
 
 header img {
-    width: 150px;
-    height: 150px;
+  width: 150px;
 
-    border-radius: 50%;
+  height: 150px;
 
-    border: 3px solid var(--blue-tech);
+  border-radius: 50%;
 
-    object-fit: cover;
+  border: 3px solid var(--blue-tech);
 
-    margin-bottom: 20px;
+  object-fit: cover;
 
-    box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+  margin-bottom: 22px;
+
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.25);
+}
+
+
+/* Identificação profissional */
+
+.cargo {
+  display: inline-block;
+
+  color: var(--blue-tech);
+
+  border: 1px solid var(--blue-tech);
+
+  background-color: rgba(59, 130, 246, 0.08);
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 0.75rem;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 12px;
 }
 
 
 header h1 {
-    color: var(--blue-tech);
+  color: var(--text-color);
 
-    font-size: 2.7rem;
+  font-size: 2.8rem;
 
-    margin-bottom: 8px;
+  margin-bottom: 8px;
+
+  line-height: 1.2;
 }
 
 
 header h2 {
-    font-size: 1.3rem;
+  color: var(--blue-tech);
 
-    font-weight: normal;
+  font-size: 1.2rem;
 
-    color: var(--text-color);
+  font-weight: normal;
 
-    margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 
 header p {
-    max-width: 750px;
+  max-width: 750px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 
-    font-size: 1.05rem;
+  font-size: 1.05rem;
+
+  line-height: 1.7;
 }
 
 
@@ -93,11 +147,11 @@ header p {
    ============================== */
 
 main {
-    max-width: 1000px;
+  max-width: 1000px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    padding: 0 20px 60px;
+  padding: 0 20px 60px;
 }
 
 
@@ -106,24 +160,26 @@ main {
    ============================== */
 
 main section {
-    background-color: var(--card-color);
+  background-color: var(--card-color);
 
-    border: 1px solid var(--border-color);
+  border: 1px solid var(--border-color);
 
-    border-radius: 12px;
+  border-radius: 12px;
 
-    padding: 30px;
+  padding: 30px;
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
+
+
 main section > h2 {
-    color: var(--blue-tech);
+  color: var(--blue-tech);
 
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -132,15 +188,16 @@ main section > h2 {
    ============================== */
 
 #sobre p {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 
-    font-size: 1rem;
+  font-size: 1rem;
 
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
+
 #sobre p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 
@@ -149,39 +206,62 @@ main section > h2 {
    ============================== */
 
 .tecnologias-lista {
-    display: flex;
+  display: grid;
 
-    flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
 
-    gap: 12px;
+  gap: 15px;
+
+  margin-top: 10px;
 }
 
 
 .tecnologias-lista span {
-    background-color: #202024;
+  display: flex;
 
-    border: 1px solid var(--border-color);
+  align-items: center;
 
-    color: var(--text-color);
+  justify-content: center;
 
-    padding: 10px 18px;
+  min-height: 60px;
 
-    border-radius: 8px;
+  background: linear-gradient(
+    145deg,
+    #1c1c20,
+    #151518
+  );
 
-    font-weight: bold;
+  border: 1px solid var(--border-color);
 
-    transition: 0.3s;
+  border-radius: 10px;
+
+  color: var(--text-color);
+
+  font-size: 1rem;
+
+  font-weight: bold;
+
+  letter-spacing: 0.3px;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 
 .tecnologias-lista span:hover {
-    background-color: var(--blue-tech);
+  transform: translateY(-4px);
 
-    border-color: var(--blue-tech);
+  border-color: var(--blue-tech);
 
-    color: #ffffff;
+  background-color: var(--card-hover);
 
-    transform: translateY(-2px);
+  box-shadow:
+    0 6px 18px rgba(59, 130, 246, 0.15);
+
+  color: #ffffff;
 }
 
 
@@ -190,74 +270,106 @@ main section > h2 {
    ============================== */
 
 .projeto {
-    background-color: #151518;
+  background-color: #151518;
 
-    border: 1px solid var(--border-color);
+  border: 1px solid var(--border-color);
 
-    border-radius: 10px;
+  border-radius: 12px;
 
-    padding: 25px;
+  padding: 28px;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
+
+.projeto:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Identificação do projeto */
 
 .tag-projeto {
-    display: inline-block;
+  display: inline-block;
 
-    background-color: rgba(59, 130, 246, 0.15);
+  background-color: rgba(59, 130, 246, 0.1);
 
-    color: var(--blue-tech);
+  color: var(--blue-tech);
 
-    border: 1px solid var(--blue-tech);
+  border: 1px solid rgba(59, 130, 246, 0.5);
 
-    padding: 5px 10px;
+  padding: 6px 12px;
 
-    border-radius: 5px;
+  border-radius: 20px;
 
-    font-size: 0.75rem;
+  font-size: 0.72rem;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    margin-bottom: 12px;
+  letter-spacing: 0.8px;
+
+  margin-bottom: 12px;
 }
 
 
-.projeto h3 {
-    font-size: 1.6rem;
+/* Nome do projeto */
 
-    margin-bottom: 20px;
+.projeto h3 {
+  font-size: 1.8rem;
+
+  color: var(--text-color);
+
+  margin-bottom: 20px;
+
+  line-height: 1.3;
 }
 
 
 /* ==============================
-   GALERIA
+   GALERIA DO PROJETO
    ============================== */
 
 .galeria-projeto {
-    display: flex;
+  display: grid;
 
-    gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
 
-    margin-bottom: 20px;
+  gap: 15px;
+
+  margin-bottom: 25px;
 }
 
 
 .galeria-projeto img {
-    width: 100%;
+  width: 100%;
 
-    max-width: 32%;
+  height: 280px;
 
-    border-radius: 8px;
+  border-radius: 10px;
 
-    object-fit: cover;
+  object-fit: cover;
 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
 
-    transition: transform 0.3s;
+  box-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 
 .galeria-projeto img:hover {
-    transform: translateY(-4px);
+  transform: translateY(-5px) scale(1.02);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
 
@@ -266,14 +378,33 @@ main section > h2 {
    ============================== */
 
 .projeto p {
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 
-    margin-bottom: 15px;
+  font-size: 1rem;
+
+  line-height: 1.7;
+
+  margin-bottom: 16px;
 }
 
 
 .projeto p strong {
-    color: var(--text-color);
+  color: var(--text-color);
+}
+
+
+/* Destaque das tecnologias do projeto */
+
+.projeto p:nth-of-type(3) {
+  padding: 12px 15px;
+
+  background-color: rgba(59, 130, 246, 0.06);
+
+  border-left: 3px solid var(--blue-tech);
+
+  border-radius: 5px;
+
+  margin-top: 10px;
 }
 
 
@@ -282,56 +413,63 @@ main section > h2 {
    ============================== */
 
 .links-projeto {
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 12px;
+  gap: 12px;
 
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 
 .links-projeto a {
-    display: inline-block;
+  display: inline-block;
 
-    padding: 11px 18px;
+  padding: 11px 18px;
 
-    border-radius: 7px;
+  border-radius: 7px;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    transition: 0.3s;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 
 .links-projeto a:first-child {
-    background-color: var(--blue-tech);
+  background-color: var(--blue-tech);
 
-    color: #ffffff;
+  color: #ffffff;
 }
 
 
 .links-projeto a:first-child:hover {
-    background-color: var(--blue-hover);
+  background-color: var(--blue-hover);
+
+  transform: translateY(-2px);
 }
 
 
 .links-projeto a:last-child {
-    background-color: transparent;
+  background-color: transparent;
 
-    border: 1px solid var(--blue-tech);
+  border: 1px solid var(--blue-tech);
 
-    color: var(--blue-tech);
+  color: var(--blue-tech);
 }
 
 
 .links-projeto a:last-child:hover {
-    background-color: var(--blue-tech);
+  background-color: var(--blue-tech);
 
-    color: #ffffff;
+  color: #ffffff;
+
+  transform: translateY(-2px);
 }
 
 
@@ -340,49 +478,87 @@ main section > h2 {
    ============================== */
 
 #contato {
-    text-align: center;
+  text-align: center;
+  padding: 40px 30px;
 }
+.tag-contato {
+  display: inline-block;
 
+  color: var(--blue-tech);
 
+  border: 1px solid rgba(59, 130, 246, 0.5);
+
+  background-color: rgba(59, 130, 246, 0.08);
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 0.72rem;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 12px;
+}
+#contato h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+  
 #contato p {
-    color: var(--text-secondary);
+  max-width: 600px;
 
-    margin-bottom: 20px;
+  margin: 0 auto 25px;
+
+  color: var(--text-secondary);
+
+  font-size: 1rem;
+
+  line-height: 1.7;
 }
+
+
 
 
 .links-contato {
-    display: flex;
+  display: flex;
 
-    justify-content: center;
+  justify-content: center;
 
-    gap: 15px;
+  gap: 15px;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 
 .links-contato a {
-    background-color: var(--blue-tech);
+    min-width: 130px;
+  background-color: var(--blue-tech);
 
-    color: #ffffff;
+  color: #ffffff;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    padding: 11px 22px;
+  padding: 11px 22px;
 
-    border-radius: 7px;
+  border-radius: 7px;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    transition: 0.3s;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 
 .links-contato a:hover {
-    background-color: var(--blue-hover);
+  background-color: var(--blue-hover);
 
-    transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.02);
+  
 }
 
 
@@ -391,18 +567,18 @@ main section > h2 {
    ============================== */
 
 footer {
-    border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
 
-    text-align: center;
+  text-align: center;
 
-    padding: 25px 20px;
+  padding: 25px 20px;
 
-    color: var(--text-secondary);
+  color: var(--text-secondary);
 }
 
 
 footer p {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 
@@ -411,44 +587,46 @@ footer p {
    ============================== */
 
 #btnTopo {
-    display: none;
+  display: none;
 
-    position: fixed;
+  position: fixed;
 
-    bottom: 30px;
+  bottom: 30px;
 
-    right: 30px;
+  right: 30px;
 
-    z-index: 99;
+  z-index: 99;
 
-    background-color: var(--blue-tech);
+  background-color: var(--blue-tech);
 
-    color: #ffffff;
+  color: #ffffff;
 
-    border: none;
+  border: none;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    width: 45px;
+  width: 45px;
 
-    height: 45px;
+  height: 45px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 
-    transition: 0.3s;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 
 #btnTopo:hover {
-    background-color: var(--blue-hover);
+  background-color: var(--blue-hover);
 
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 
@@ -458,62 +636,128 @@ footer p {
 
 @media (max-width: 700px) {
 
-    header {
-        padding: 40px 20px;
-    }
+  header {
+    padding: 50px 20px 45px;
+  }
 
 
-    header img {
-        width: 130px;
-        height: 130px;
-    }
+  header img {
+    width: 130px;
+
+    height: 130px;
+
+    border-radius: 50%;
+
+    margin-bottom: 15px;
+  }
 
 
-    header h1 {
-        font-size: 2.2rem;
-    }
+  .cargo {
+    font-size: 0.7rem;
+
+    padding: 5px 10px;
+
+    margin-bottom: 10px;
+  }
 
 
-    header h2 {
-        font-size: 1.1rem;
-    }
+  header h1 {
+    color: var(--text-color);
+
+    font-size: 2.2rem;
+
+    line-height: 1.2;
+
+    margin-bottom: 8px;
+  }
 
 
-    main {
-        padding: 0 15px 40px;
-    }
+  header h2 {
+    font-size: 1rem;
+
+    margin-bottom: 18px;
+  }
 
 
-    main section {
-        padding: 22px;
-    }
+  header p {
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+  }
 
 
-    .galeria-projeto {
-        flex-direction: column;
-    }
+  main {
+    padding: 0 15px 40px;
+  }
 
 
-    .galeria-projeto img {
-        max-width: 100%;
-    }
+  main section {
+    padding: 22px;
+  }
 
 
-    .links-projeto {
-        flex-direction: column;
-    }
+  .tecnologias-lista {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+  }
 
 
-    .links-projeto a {
-        text-align: center;
+  .tecnologias-lista span {
+    min-height: 55px;
 
-        width: 100%;
-    }
+    font-size: 0.9rem;
+  }
 
 
-    #btnTopo {
-        right: 20px;
+  .projeto {
+    padding: 20px;
+  }
 
-        bottom: 20px;
-    }
+
+  .projeto h3 {
+    font-size: 1.5rem;
+  }
+
+
+  .galeria-projeto {
+    grid-template-columns: 1fr;
+  }
+
+
+  .galeria-projeto img {
+    height: auto;
+
+    max-width: 100%;
+  }
+
+
+  .links-projeto {
+    flex-direction: column;
+  }
+
+
+  .links-projeto a {
+    text-align: center;
+
+    width: 100%;
+  }
+
+
+  #btnTopo {
+    right: 20px;
+
+    bottom: 20px;
+  }
+  #contato p {
+  max-width: 600px;
+
+  margin: 0 auto 25px;
+
+  color: var(--text-secondary);
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+}
 }
